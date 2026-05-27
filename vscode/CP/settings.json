@@ -1,0 +1,245 @@
+{
+  "files.autoSave": "afterDelay",
+  "editor.mouseWheelZoom": true,
+  "claudeCode.preferredLocation": "panel",
+  "emmet.includeLanguages": {
+    "django-html": "html"
+  },
+  "python.createEnvironment.trigger": "off",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  
+  // ==========================================
+  // 🐚 Integrated Shell & Terminal Layout
+  // ==========================================
+  "terminal.integrated.defaultProfile.windows": "MSYS2 UCRT64",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontWeight": "normal",
+  "terminal.integrated.shellIntegration.enabled": false,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.initialHint": false,
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell",
+      "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash",
+      "icon": "terminal-git-bash",
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+      "args": [
+        "--login",
+        "-i"
+      ]
+    },
+    "bash (MSYS2)": {
+      "path": "C:\\msys64\\usr\\bin\\bash.exe",
+      "args": [
+        "--login",
+        "-i"
+      ],
+      "env": {
+        "CHERE_INVOKING": "1"
+      }
+    },
+    "MSYS2 UCRT64": {
+      "path": "C:\\msys64\\usr\\bin\\bash.exe",
+      "args": [
+        "--login",
+        "-i"
+      ],
+      "env": {
+        "MSYSTEM": "UCRT64",
+        "CHERE_INVOKING": "1"
+      }
+    }
+  },
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "/usr/bin/bash",
+      "icon": "terminal-bash"
+    },
+    "zsh": {
+      "path": "/usr/bin/zsh"
+    },
+    "fish": {
+      "path": "fish"
+    },
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux"
+    },
+    "pwsh": {
+      "path": "pwsh",
+      "icon": "terminal-powershell"
+    }
+  },
+
+  // ==========================================
+  // 🎨 Themes & Custom Layout Colors (From Dev)
+  // ==========================================
+  "workbench.colorTheme": "Monokai",
+  "workbench.iconTheme": "material-icon-theme",
+  "window.customTitleBarVisibility": "windowed",
+  "vsicons.dontShowNewVersionMessage": true,
+  "workbench.startupEditor": "none",
+  "chat.disableAIFeatures": true,
+  "workbench.colorCustomizations": {
+    "editor.background": "#111111",
+    "sideBar.background": "#0d0d0d",
+    "activityBar.background": "#0d0d0d",
+    "statusBar.background": "#0d0d0d",
+    "editor.lineHighlightBackground": "#2c313c60", 
+    "editor.lineHighlightBorder": "#00000000",
+    "editorCursor.foreground": "#98c379",         
+    "terminal.cursorForeground": "#98c379",       
+    "editor.findMatchBackground": "#e5c07b40",
+    "editor.findMatchHighlightBackground": "#e5c07b20"
+  },
+
+  // ==========================================
+  // 📝 Typography & Smooth Text Editing (From Dev)
+  // ==========================================
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true, 
+  "editor.fontSize": 16,
+  "editor.lineHeight": 24, 
+  "editor.wordWrap": "on",
+  "editor.padding.top": 8,
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingQuotes": "always",
+  "editor.folding": true,
+  "editor.cursorSmoothCaretAnimation": "on", 
+  "editor.smoothScrolling": true,             
+  "terminal.integrated.smoothScrolling": true,
+
+  // ==========================================
+  // 🌈 Structural Guides & Clean Layout
+  // ==========================================
+  "editor.guides.bracketPairs": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.renderLineHighlight": "all", 
+  "editor.matchBrackets": "always",
+  "editor.renderWhitespace": "boundary",
+  "editor.tabSize": 4, // 4 spaces standard for C++ formatting
+  "workbench.editor.tabSizing": "shrink",                 
+  "workbench.editor.editorActionsLocation": "hidden",     
+  "explorer.confirmDragAndDrop": false,                   
+  "editor.stickyScroll.enabled": false,
+  "breadcrumbs.enabled": false,
+  "workbench.statusBar.visible": true,
+  "editor.minimap.enabled": false,
+  "editor.scrollBeyondLastLine": false,
+  "workbench.editor.showTabs": "multiple",
+  "editor.guides.indentation": true,
+
+  // ==========================================
+  // 🔍 Git, Search & Version Control
+  // ==========================================
+  "git.autofetch": true,
+  "search.smartCase": true,
+  "search.followSymlinks": false,
+  "scm.diffDecorations": "all",
+  "git.openRepositoryInParentFolders": "always",
+
+  // ==========================================
+  // ⚡ IntelliSense & Typing Settings (From Dev)
+  // ==========================================
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.tabCompletion": "off",
+  "emmet.triggerExpansionOnTab": true,
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "editor.suggest.preview": false,
+  "[cpp]": {
+    "editor.wordBasedSuggestions": "off"
+  },
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.inlineSuggest.showToolbar": "never",
+  "editor.quickSuggestions": {
+    "comments": false,
+    "strings": true,
+    "other": true
+  },
+  "editor.snippetSuggestions": "top", 
+  "workbench.settings.applyToAllProfiles": [],
+  "workbench.activityBar.location": "top",
+
+  // ==========================================
+  // 🎛️ Vim Mode & Elite Split Layouts
+  // ==========================================
+  "editor.lineNumbers": "relative",
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
+  "vim.timeout": 200,
+  "vim.smartRelativeLine": true,
+  "vim.cursorStylePerMode": true,
+  "vim.leader": " ",
+  
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // Move between splits
+    { "before": ["<leader>", "h"], "commands": ["workbench.action.navigateLeft"] },
+    { "before": ["<leader>", "j"], "commands": ["workbench.action.navigateDown"] },
+    { "before": ["<leader>", "k"], "commands": ["workbench.action.navigateUp"] },
+    { "before": ["<leader>", "l"], "commands": ["workbench.action.navigateRight"] },
+    
+    // Manage splits
+    { "before": ["<leader>", "v"], "commands": ["workbench.action.splitEditor"] },
+    { "before": ["<leader>", "s"], "commands": ["workbench.action.splitEditorOrthogonal"] },
+    { "before": ["<leader>", "q"], "commands": ["workbench.action.closeActiveEditor"] },
+    
+    // Resize splits
+    { "before": ["<leader>", "="], "commands": ["workbench.action.increaseViewWidth"] },
+    { "before": ["<leader>", "-"], "commands": ["workbench.action.decreaseViewWidth"] },
+    { "before": ["<leader>", "0"], "commands": ["workbench.action.evenEditorWidths"] },
+
+    // Switch file tabs (Shift + H/L)
+    { "before": ["H"], "commands": ["workbench.action.previousEditor"] },
+    { "before": ["L"], "commands": ["workbench.action.nextEditor"] },
+    
+    // Slide terminal open/closed
+    { "before": ["<leader>", "."], "commands": ["workbench.action.terminal.toggleTerminal"] }
+  ],
+  
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-c>": false,
+    "<C-v>": false,
+    "<C-z>": false,
+    "<C-y>": false,
+    "<C-p>": false,
+    "<C-x>": false,
+    "<C-b>": false,
+    "<C-s>": false,
+    "<C-d>": false,
+    "<C-w>": false,
+    "<C-r>": false,
+    "<C-t>": false,
+    "<C-n>": false,
+    "<C-l>": false,
+    "<C-k>": false
+  },
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "window.zoomLevel": 1
+}
