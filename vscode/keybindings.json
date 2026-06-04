@@ -1,0 +1,83 @@
+// Place your key bindings in this file to override the defaults
+[
+    // ── WSL ──────────────────────────────────────────────────
+    {
+        "key": "alt+win+l",
+        "command": "remote-wsl.reopenInWSL"
+    },
+
+    // ── vim-style cursor movement ────────────────────────────
+    {
+        "key": "alt+l",
+        "command": "cursorRight",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+j",
+        "command": "cursorLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+k",
+        "command": "cursorDown",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+i",
+        "command": "cursorUp",
+        "when": "editorTextFocus"
+    },
+
+    // ── code-runner (keep but rarely needed now) ─────────────
+    {
+        "key": "ctrl+shift+alt+b",
+        "command": "code-runner.run"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "-code-runner.run"
+    },
+
+    // ── CP task runners ──────────────────────────────────────
+    
+{
+        // Ctrl+Shift+B: use build default instead of runTask
+        "key": "f5",
+        "command": "workbench.action.tasks.build"
+        // no "args" needed — picks the isDefault:true task automatically
+        // also add "when" so it only fires on .cpp files
+    },
+
+    
+{
+        // suppress VSCode's built-in Ctrl+Shift+B picker popup
+        "key": "ctrl+shift+b",
+        "command": "-workbench.action.tasks.build",
+        "when": "!editorLangId == 'cpp'"
+    },
+
+    {
+        "key": "f9",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Run (File I/O)"
+    },
+    {
+        "key": "f10",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Run & Check (Expected)"
+    },
+
+    // ── Ctrl+Shift+V: paste-over in input/expected.txt ───────
+    {
+        "key": "ctrl+shift+v",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "editor.action.selectAll",
+                "editor.action.clipboardPasteAction"
+            ]
+        },
+        "when": "editorTextFocus && resourceFilename =~ /^(input|expected)\\.txt$/"
+    }
+    // ↑ merged both duplicate bindings into one using a regex when-clause
+]
